@@ -6,6 +6,7 @@
       ansible.builtin.apt:
         update_cache: true
         cache_valid_time: "{{ devture_playbook_help_apt_cache_prewarming_cache_valid_time }}"
+      ignore_errors: "{{ devture_playbook_help_apt_cache_ignore_errors }}"
   tags:
     - setup-all
     - install-all
